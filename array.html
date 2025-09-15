@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The toString() Method</h2>
+
+    <p>The toString() method returns the elements of an array as a comma separated string:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+      //  let myList = fruits.toString(); strings sep by commas
+      let frulen = fruits.length;
+      let text = "<ol>"//"<ul>"
+      for (let i = 0; i < frulen; i++){
+        text += "<li>" + fruits[i] + "</li>";
+      }
+      text += "</ol>"//"</ul>"
+        // document.getElementById("demo").innerHTML = myList;
+       // document.getElementById("demo").innerHTML = fruits.length;
+      // document.getElementById("demo").innerHTML = fruits.sort();
+      document.getElementById("demo").innerHTML =text//fruits[ fruits.length - 1];
+    </script>
+
+
+</body>
+
+</html>
