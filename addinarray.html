@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>The push() Method</h2>
+
+    <p>The push method appends a new element to an array.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple"];
+        document.getElementById("demo").innerHTML = fruits;
+        fruits[fruits.length] = "Lemon";  // Adds "Lemon" to fruits
+
+        // function myFunction() {
+        //     fruits.push("Lemon");
+        //     //fruits.pop("lemon");
+        document.getElementById("demo").innerHTML = fruits;
+
+        // }
+        // Adding elements with
+        // high indexes can create undefined "holes" in an array:
+        //  In JavaScript, arrays use numbered indexes.
+
+        // In JavaScript, objects use named indexes.
+        // Arrays with named indexes are called associative arrays (or hashes).
+
+        // JavaScript does not support arrays with named indexes.
+
+        // In JavaScript, arrays always use numbered indexes.  
+    </script>
+
+
+</body>
+
+</html>
